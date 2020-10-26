@@ -1,0 +1,22 @@
+<!-- <div class="modal" *ngIf="show"> -->
+  <div class="modal">
+  <div class="container">
+    <div>
+      <div class="modal-header">
+        <h4>{{ detail?.fullName }}</h4>
+        <button (click)="close()" class="btn btn-danger todo-close">x</button>
+      </div>
+      <div class="modal-content">
+        <img [src]="detail?.sm">
+        <div class="modal-bio">
+          <p><strong>AlterEgos:</strong> {{ detail?.alterEgos }}</p>
+          <p><strong>Aliases:</strong> {{ detail?.aliases }}</p>
+          <p><strong>PlaceOfBirth:</strong> {{ detail?.placeOfBirth }}</p>
+          <p><strong>FirstAppearance:</strong> {{ detail?.firstAppearance }}</p>
+          <p><strong>Publisher:</strong> {{ detail?.publisher }}</p>
+          <p><strong>Alignment:</strong> {{ detail?.alignment }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
